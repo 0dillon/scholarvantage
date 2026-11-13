@@ -1,0 +1,165 @@
+/* ScholarVantage Global — Design Tokens
+ * Visual World: Candidate 6 — The Elite Fellowship Registry & Honours Ledger
+ * Typography: Cinzel (Display & Headings) + Manrope (Interface, Data, Body)
+ */
+
+:root {
+  /* Spatial System (8pt baseline) */
+  --space-3xs: 2px;
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 36px;
+  --space-2xl: 56px;
+  --space-3xl: 84px;
+  --space-4xl: 120px;
+
+  /* Typography Scales */
+  --font-display: "Cinzel", Georgia, "Times New Roman", serif;
+  --font-body: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+  --text-5xl: 3rem;       /* 48px */
+  --text-display: clamp(2.35rem, 4.5vw + 0.5rem, 3.85rem);
+  --text-section: clamp(1.85rem, 2.8vw + 0.5rem, 2.75rem);
+  --text-title: clamp(1.25rem, 1.2vw + 0.75rem, 1.625rem);
+  --text-lead: clamp(1.05rem, 0.4vw + 0.95rem, 1.25rem);
+
+  --tracking-tight: -0.015em;
+  --tracking-display: 0.02em;
+  --tracking-wide: 0.08em;
+  --tracking-widest: 0.16em;
+
+  /* Color Palette — The Elite Registry System */
+  /* Midnight Lapis & Executive Navy */
+  --color-navy-950: #060B14;
+  --color-navy-900: #0B1528;
+  --color-navy-850: #0F1D36;
+  --color-navy-800: #142646;
+  --color-navy-700: #1C335C;
+  --color-navy-600: #264578;
+
+  /* Precious Gold Bullion & Champagne Bronze */
+  --color-gold-300: #EAD694;
+  --color-gold-400: #D4AF37;
+  --color-gold-500: #C5A059;
+  --color-gold-600: #A8833C;
+  --color-gold-dim: rgba(197, 160, 89, 0.12);
+  --color-gold-border: rgba(197, 160, 89, 0.3);
+  --color-gold-border-strong: rgba(212, 175, 55, 0.55);
+
+  /* Alabaster Vellum & Parchment Surfaces */
+  --color-vellum-50: #FAF8F5;
+  --color-vellum-100: #F4F0E8;
+  --color-vellum-200: #EAE4D7;
+  --color-vellum-300: #DBD3C2;
+
+  /* Crisp Light Surfaces */
+  --color-surface-white: #FFFFFF;
+  --color-surface-subtle: #F8FAFC;
+
+  /* Inks (Dark-on-Light) */
+  --color-ink-primary: #0A1220;
+  --color-ink-secondary: #334155;
+  --color-ink-muted: #5B6B82;
+  --color-ink-subtle: #8A99AD;
+
+  /* Inks (Light-on-Dark) */
+  --color-light-primary: #FFFFFF;
+  --color-light-secondary: #E2E8F0;
+  --color-light-muted: #94A3B8;
+
+  /* Hairlines & Borders */
+  --color-rule-light: rgba(15, 23, 42, 0.09);
+  --color-rule-medium: rgba(15, 23, 42, 0.15);
+  --color-rule-dark: rgba(255, 255, 255, 0.11);
+  --color-rule-dark-strong: rgba(255, 255, 255, 0.2);
+
+  /* WhatsApp & Signals */
+  --color-wa-green: #25D366;
+  --color-wa-bg: rgba(37, 211, 102, 0.12);
+  --color-wa-border: rgba(37, 211, 102, 0.35);
+  --color-error: #B91C1C;
+  --color-error-bg: #FEF2F2;
+  --color-error-border: #F87171;
+  --color-success: #15803D;
+  --color-success-bg: #F0FDF4;
+  --color-success-border: #86EFAC;
+
+  /* Focus & Accessibility */
+  --color-focus: #C5A059;
+  --color-focus-dark: #D4AF37;
+
+  /* Elevation & Shadows */
+  --shadow-sm: 0 2px 6px -1px rgba(6, 11, 20, 0.06), 0 1px 3px -1px rgba(6, 11, 20, 0.04);
+  --shadow-md: 0 10px 25px -4px rgba(6, 11, 20, 0.08), 0 4px 10px -2px rgba(6, 11, 20, 0.03);
+  --shadow-lg: 0 24px 48px -8px rgba(6, 11, 20, 0.14), 0 8px 16px -4px rgba(6, 11, 20, 0.05);
+  --shadow-gold: 0 8px 24px -4px rgba(197, 160, 89, 0.28);
+  --shadow-navy: 0 20px 40px -10px rgba(6, 11, 20, 0.45);
+
+  /* Layout Boundaries */
+  --container-max: 1280px;
+  --container-narrow: 960px;
+  --gutter: clamp(1.25rem, 3.5vw, 2.5rem);
+  --nav-height: 80px;
+  --nav-height-mobile: 64px;
+
+  /* Radii */
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-pill: 9999px;
+
+  /* Motion Curves */
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 160ms;
+  --dur-base: 280ms;
+  --dur-slow: 480ms;
+
+  /* Semantic System Aliases */
+  --color-paper: var(--color-vellum-50);
+  --color-paper-2: var(--color-vellum-100);
+  --color-paper-3: var(--color-vellum-200);
+  --color-field: var(--color-navy-950);
+  --color-field-2: var(--color-navy-900);
+  --color-field-rule: var(--color-rule-dark);
+  --color-on-field: var(--color-light-primary);
+  --color-on-field-2: var(--color-light-secondary);
+  --color-accent: var(--color-gold-500);
+  --color-accent-2: var(--color-gold-400);
+  --color-accent-ink: var(--color-navy-950);
+  --color-ink: var(--color-ink-primary);
+  --color-ink-2: var(--color-ink-secondary);
+  --color-muted: var(--color-rule-medium);
+  --color-rule: var(--color-rule-medium);
+  --rule-hair: 1px;
+  --color-scrim: #060B14;
+  --color-focus-on-field: var(--color-gold-400);
+  --color-success-2: var(--color-success-bg);
+  --nav-h: var(--nav-height);
+  --gap-columns: clamp(1rem, 2vw, 1.75rem);
+  --section-gap: clamp(56px, 8vw, 100px);
+  --section-gap-s: clamp(40px, 5vw, 64px);
+  --section-gap-l: clamp(80px, 10vw, 140px);
+  --radius-card: var(--radius-md);
+  --radius-input: var(--radius-sm);
+  --dur-short: var(--dur-fast);
+  --dur-long: var(--dur-slow);
+  --dur-micro: 90ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --text-display-s: clamp(1.85rem, 3.2vw + 0.5rem, 2.75rem);
+  --text-md: var(--text-base);
+  --z-sticky-nav: 500;
+  --z-toast: 1000;
+}
